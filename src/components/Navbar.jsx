@@ -255,9 +255,21 @@ function Navbar() {
       <div>
         <p className="text-xs font-semibold text-gray-400 mb-4">GET STARTED</p>
         <ul className="space-y-3 text-sm text-gray-700">
-          <li className="hover:text-blue-600 cursor-pointer">Profile</li>
-          <li className="hover:text-blue-600 cursor-pointer">Contact Us</li>
-          <li className="hover:text-blue-600 cursor-pointer">Become a Teacher</li>
+           <li>
+         <Link to="/profile" className="hover:text-blue-600 cursor-pointer">
+              Profile
+          </Link>
+         </li>
+          <li>
+          <Link to="/contact" className="hover:text-blue-600 cursor-pointer">
+              Contact Us
+          </Link>
+           </li>
+           <li>
+             <Link to="/instructor" className="hover:text-blue-600 cursor-pointer">
+               Become a Teacher
+             </Link>
+            </li>
           <li className="hover:text-blue-600 cursor-pointer">Instructor</li>
           <li className="hover:text-blue-600 cursor-pointer">FAQs</li>
           <li className="hover:text-blue-600 cursor-pointer">Privacy Policy</li>
