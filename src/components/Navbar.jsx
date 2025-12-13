@@ -225,6 +225,90 @@ function Navbar() {
                 </div>
               </div>
             </div>
+            {/* PAGES MEGA DROPDOWN */}
+<div className="group relative">
+  <li className="py-5 flex items-center gap-1 cursor-pointer group-hover:text-blue-500">
+    <span>Pages</span>
+    <FaChevronUp className="transition-transform duration-300 group-hover:rotate-180" />
+  </li>
+
+  {/* DROPDOWN */}
+  <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-[1100px] bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+    <div className="grid grid-cols-4 gap-8 p-8">
+
+      {/* COLUMN 1 */}
+      <div>
+        <p className="text-xs font-semibold text-gray-400 mb-4">GET STARTED</p>
+        <ul className="space-y-3 text-sm text-gray-700">
+          <li className="hover:text-blue-600 cursor-pointer">About Us</li>
+          <li className="hover:text-blue-600 cursor-pointer">About Us 02</li>
+          <li className="hover:text-blue-600 cursor-pointer">Event Grid</li>
+          <li className="hover:text-blue-600 cursor-pointer">Event List</li>
+          <li className="hover:text-blue-600 cursor-pointer">Event Sidebar</li>
+          <li className="hover:text-blue-600 cursor-pointer">Event Details</li>
+          <li className="hover:text-blue-600 cursor-pointer">Academy Gallery</li>
+          <li className="hover:text-blue-600 cursor-pointer">Admission Guide</li>
+        </ul>
+      </div>
+
+      {/* COLUMN 2 */}
+      <div>
+        <p className="text-xs font-semibold text-gray-400 mb-4">GET STARTED</p>
+        <ul className="space-y-3 text-sm text-gray-700">
+          <li className="hover:text-blue-600 cursor-pointer">Profile</li>
+          <li className="hover:text-blue-600 cursor-pointer">Contact Us</li>
+          <li className="hover:text-blue-600 cursor-pointer">Become a Teacher</li>
+          <li className="hover:text-blue-600 cursor-pointer">Instructor</li>
+          <li className="hover:text-blue-600 cursor-pointer">FAQs</li>
+          <li className="hover:text-blue-600 cursor-pointer">Privacy Policy</li>
+          <li className="hover:text-blue-600 cursor-pointer">404 Page</li>
+          <li className="hover:text-blue-600 cursor-pointer">Maintenance</li>
+        </ul>
+      </div>
+
+      {/* COLUMN 3 */}
+      <div>
+        <p className="text-xs font-semibold text-gray-400 mb-4">SHOP PAGES</p>
+        <ul className="space-y-3 text-sm text-gray-700">
+          <li className="flex items-center gap-2 text-blue-600 font-semibold cursor-pointer">
+            Shop
+            <span className="text-[10px] bg-purple-100 text-purple-600 px-2 py-0.5 rounded-full">
+              Sale Anything
+            </span>
+          </li>
+          <li className="hover:text-blue-600 cursor-pointer">Single Product</li>
+          <li className="hover:text-blue-600 cursor-pointer">Cart Page</li>
+          <li className="hover:text-blue-600 cursor-pointer">Checkout</li>
+          <li className="hover:text-blue-600 cursor-pointer">Wishlist Page</li>
+          <li className="hover:text-blue-600 cursor-pointer">My Account</li>
+          <li className="hover:text-blue-600 cursor-pointer">Login & Register</li>
+          <li className="hover:text-blue-600 cursor-pointer">Subscription</li>
+        </ul>
+      </div>
+
+      {/* COLUMN 4 – PREVIEW CARDS */}
+      <div className="space-y-4">
+        {[
+          "Online Education",
+          "Language Club",
+          "University Status",
+          "Course School",
+          "Academy"
+        ].map((item, i) => (
+          <div
+            key={i}
+            className="flex justify-between items-center bg-gray-100 hover:bg-blue-50 transition rounded-xl p-4 cursor-pointer"
+          >
+            <span className="font-semibold text-sm">{item}</span>
+            <span className="text-gray-400">›</span>
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </div>
+</div>
+
           </ul>
 
           <div className="flex gap-5 font-bold items-center">
