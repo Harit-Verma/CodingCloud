@@ -240,14 +240,21 @@ function Navbar() {
       <div>
         <p className="text-xs font-semibold text-gray-400 mb-4">GET STARTED</p>
         <ul className="space-y-3 text-sm text-gray-700">
-          <li className="hover:text-blue-600 cursor-pointer">About Us</li>
-          <li className="hover:text-blue-600 cursor-pointer">About Us 02</li>
-          <li className="hover:text-blue-600 cursor-pointer">Event Grid</li>
-          <li className="hover:text-blue-600 cursor-pointer">Event List</li>
-          <li className="hover:text-blue-600 cursor-pointer">Event Sidebar</li>
-          <li className="hover:text-blue-600 cursor-pointer">Event Details</li>
-          <li className="hover:text-blue-600 cursor-pointer">Academy Gallery</li>
-          <li className="hover:text-blue-600 cursor-pointer">Admission Guide</li>
+          <li>
+          <Link to="/about" className="hover:text-blue-600 cursor-pointer"> About Us 01</Link>
+          </li>
+          <li>
+          <Link to="/events" className="hover:text-blue-600 cursor-pointer"> Events</Link>
+          </li>
+          <li>
+          <Link to="/event-details" className="hover:text-blue-600 cursor-pointer"> Event Details</Link>
+          </li>
+          <li>
+          <Link to="/academy-gallery" className="hover:text-blue-600 cursor-pointer"> Academy Gallery</Link>
+          </li>
+          <li>
+          <Link to="/admission-guide" className="hover:text-blue-600 cursor-pointer"> Admission Guide</Link>
+          </li>
         </ul>
       </div>
 
@@ -270,11 +277,26 @@ function Navbar() {
                Become a Teacher
              </Link>
             </li>
-          <li className="hover:text-blue-600 cursor-pointer">Instructor</li>
-          <li className="hover:text-blue-600 cursor-pointer">FAQs</li>
-          <li className="hover:text-blue-600 cursor-pointer">Privacy Policy</li>
-          <li className="hover:text-blue-600 cursor-pointer">404 Page</li>
-          <li className="hover:text-blue-600 cursor-pointer">Maintenance</li>
+
+          <li>
+          <Link to="/Teachers" className="hover:text-blue-600 cursor-pointer">
+              Instructors
+          </Link>
+          </li>
+
+          <li>
+          <Link to="/faqs" className="hover:text-blue-600 cursor-pointer">
+              FAQs
+          </Link>
+          </li>
+          <li>
+          <Link to="/privacy-policy" className="hover:text-blue-600 cursor-pointer">
+              Privacy Policy
+          </Link>
+          </li>
+
+          {/* <li className="hover:text-blue-600 cursor-pointer">404 Page</li>
+          <li className="hover:text-blue-600 cursor-pointer">Maintenance</li> */}
         </ul>
       </div>
 
