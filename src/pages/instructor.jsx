@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const Instructor = () => {
   const [activeTab, setActiveTab] = useState('instructor-rules');
@@ -53,7 +55,7 @@ const Instructor = () => {
     <div className="min-h-screen bg-gray-50">
       {/* ============================================ */}
       {/* ADD NAVBAR COMPONENT HERE */}
-      {/* Example: <Navbar /> */}
+       <Navbar />
       {/* ============================================ */}
 
       {/* Breadcrumb Section */}
@@ -312,7 +314,7 @@ const Instructor = () => {
 
       {/* ============================================ */}
       {/* ADD FOOTER COMPONENT HERE */}
-      {/* Example: <Footer /> */}
+      <Footer />
       {/* ============================================ */}
     </div>
   );

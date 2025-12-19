@@ -1,5 +1,7 @@
 import React from 'react';
 import { MapPin, ChevronLeft, ChevronRight } from 'lucide-react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer'; 
 
 export default function InstructorPage() {
   const instructors = [
@@ -65,7 +67,7 @@ export default function InstructorPage() {
     <div className="min-h-screen bg-gray-50">
       {/* ============================================ */}
       {/* INSERT NAVBAR COMPONENT HERE */}
-      {/* <Navbar /> */}
+      <Navbar />
       {/* ============================================ */}
 
       {/* Breadcrumb Area */}
@@ -157,7 +159,7 @@ export default function InstructorPage() {
 
       {/* ============================================ */}
       {/* INSERT FOOTER COMPONENT HERE */}
-      {/* <Footer /> */}
+      <Footer />
       {/* ============================================ */}
     </div>
   );

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { FaHeadphones, FaEnvelope, FaMapMarkerAlt, FaArrowRight } from 'react-icons/fa';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -31,7 +33,7 @@ const Contact = () => {
     <div className="min-h-screen bg-gray-50">
       {/* ============================================ */}
       {/* ADD NAVBAR COMPONENT HERE */}
-      {/* Example: <Navbar /> */}
+         <Navbar />
       {/* ============================================ */}
 
       {/* Contact Info Section */}
@@ -247,7 +249,7 @@ const Contact = () => {
 
       {/* ============================================ */}
       {/* ADD FOOTER COMPONENT HERE */}
-      {/* Example: <Footer /> */}
+          <Footer />
       {/* ============================================ */}
     </div>
   );

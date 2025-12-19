@@ -15,7 +15,7 @@ function Navbar() {
   };
 
   return (
-    <header className="header">
+    <header className="sticky top-0 z-[9999] header">
       <nav className="h-12 shadow text-sm bg-gray-800 text-gray-400 flex justify-between items-center px-5">
         <ul className="flex items-center gap-5 px-4">
           <li className="flex items-center gap-2 hover:text-gray-200 cursor-pointer">
@@ -110,7 +110,8 @@ function Navbar() {
     </button>
 
     {/* DROPDOWN PANEL */}
-    <div className="absolute left-0 mt-3 w-[520px] bg-white rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+    <div className="absolute left-0 mt-3 w-[520px] bg-white rounded-2xl shadow-xl opacity-0 invisible pointer-events-none
+ group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
       <div className="flex p-6 gap-8">
 
         {/* LEFT COLUMN – CATEGORY LIST */}
@@ -185,7 +186,10 @@ function Navbar() {
                 <span>Dashboard</span>
                 <FaChevronUp className="group-hover:rotate-180 transition-transform duration-300" />
               </li>
-              <div className="absolute z-100 w-60 top-14 left-1/2 -translate-x-1/2 mt-2 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-40">
+              {/* <div className="absolute z-100 w-60 top-14 left-1/2 -translate-x-1/2 mt-2 bg-white rounded-lg shadow-xl opacity-0 invisible  transition-all duration-300 z-40"> 
+              */}
+              <div className="absolute w-60 top-14 left-1/2 -translate-x-1/2 mt-2 bg-white rounded-lg shadow-xl opacity-0 invisible pointer-events-none transition-all duration-300 z-[9999] group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto">
+
                 <div className="p-4">
                   {/* Instructor Dashboard */}
                   <div className="relative group/sub">
@@ -233,7 +237,7 @@ function Navbar() {
   </li>
 
   {/* DROPDOWN */}
-  <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-[1100px] bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+  <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-[1100px] bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[9999]">
     <div className="grid grid-cols-4 gap-8 p-8">
 
       {/* COLUMN 1 */}

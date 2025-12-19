@@ -1,5 +1,7 @@
 import React from 'react';
 import { ChevronRight, Instagram } from 'lucide-react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export default function PrivacyPolicyPage() {
   const instagramImages = [
@@ -15,7 +17,7 @@ export default function PrivacyPolicyPage() {
     <div className="min-h-screen bg-gray-50">
       {/* ============================================ */}
       {/* INSERT NAVBAR COMPONENT HERE */}
-      {/* <Navbar /> */}
+      <Navbar />
       {/* ============================================ */}
 
       {/* Hero Breadcrumb with Background Image */}
@@ -106,7 +108,7 @@ export default function PrivacyPolicyPage() {
 
       {/* ============================================ */}
       {/* INSERT FOOTER COMPONENT HERE */}
-      {/* <Footer /> */}
+      <Footer />
       {/* ============================================ */}
     </div>
   );

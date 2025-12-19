@@ -600,7 +600,6 @@ function Home() {
 
             {/* --- SECTION 2: POPULAR COURSES (REPLACED WITH CARD SLIDER) --- */}
             <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50 flex items-center justify-center p-4 overflow-hidden">
-
                 <div className="container mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
 
                     {/* --- LEFT SIDE: Text Content (Span 4 cols) --- */}
@@ -665,21 +664,6 @@ function Home() {
                 `}
             </style>
 
-
-            {/* --- SECTION 1: CATEGORIES --- */}
-            {/* <div className="categories flex flex-col items-center justify-center mb-10">
-                <div className='p-5 mt-20 py-1 bg-blue-200 text-blue-700 font-bold rounded-4xl'><p>CATEGORIES</p></div>
-                <div className='text-4xl font-bold w-1/2 text-center mt-5'><p>Explore Top Course Categories That Change Yourself</p></div>
-                <div className='grid grid-cols-4 w-[90%] gap-10 mt-10'>
-                    {[...Array(8)].map((_, i) => (
-                        <div key={i} className='h-60 shadow-2xl w-57 flex flex-col items-center justify-center bg-gray-100 rounded-xl font-bold hover:-translate-y-2 transition-transform duration-300'>
-                            <div className='h-25 w-25 mb-5 bg-amber-900 rounded-full'></div>
-                            <h1 className='text-xl mb-3'>Web Developer</h1>
-                            <p>25 Courses</p>
-                        </div>
-                    ))}
-                </div>
-            </div> */}
             <div className="categories flex flex-col items-center justify-center mb-10">
   <div className="p-2 mt-20 bg-blue-100 text-blue-700 font-semibold rounded-full px-6">
     CATEGORIES

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronRight, ChevronDown } from 'lucide-react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export default function FAQsPage() {
   const [activeAccordion1, setActiveAccordion1] = useState(0);
@@ -66,7 +68,7 @@ export default function FAQsPage() {
     <div className="min-h-screen bg-gray-50">
       {/* ============================================ */}
       {/* INSERT NAVBAR COMPONENT HERE */}
-      {/* <Navbar /> */}
+      <Navbar />
       {/* ============================================ */}
 
       {/* Breadcrumb Area */}
@@ -277,7 +279,7 @@ export default function FAQsPage() {
 
       {/* ============================================ */}
       {/* INSERT FOOTER COMPONENT HERE */}
-      {/* <Footer /> */}
+      <Footer />
       {/* ============================================ */}
     </div>
   );

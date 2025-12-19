@@ -1,118 +1,11 @@
-// import React from "react";
-// import profileImg from "../assets/images/avatar.jpg";
-
-// export function Profile() {
-//   return (
-//     <div className="min-h-screen bg-gray-50">
-
-//       {/* Hero Section */}
-//       <section className="bg-gradient-to-r from-indigo-500 to-purple-500 py-20">
-//         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
-
-//           {/* Profile Image */}
-//           <div className="w-48 h-48 rounded-full bg-white flex items-center justify-center shadow-lg overflow-hidden">
-//             {/* Replace with your image */}
-//             <img src={profileImg} />
-//             <span className="text-gray-400 text-sm">Profile Image</span>
-//           </div>
-
-//           {/* Profile Info */}
-//           <div className="text-white text-center md:text-left">
-//             <h1 className="text-4xl font-bold mb-2">Instructor Name</h1>
-//             <p className="text-lg opacity-90 mb-4">
-//               Bootcamp Instructor | Web Developer
-//             </p>
-
-//             <div className="flex justify-center md:justify-start gap-6 text-sm">
-//               <span>⭐ 4.9 (15 Reviews)</span>
-//               <span>📚 20 Courses</span>
-//               <span>👨‍🎓 40 Students</span>
-//             </div>
-//           </div>
-
-//         </div>
-//       </section>
-
-//       {/* Main Content */}
-//       <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-3 gap-10">
-
-//         {/* Left Section */}
-//         <div className="lg:col-span-2 space-y-10">
-
-//           {/* Biography */}
-//           <div className="bg-white p-8 rounded-xl shadow">
-//             <h2 className="text-2xl font-semibold mb-4">Biography</h2>
-//             <p className="text-gray-600 leading-relaxed">
-//               Write instructor bio here. Add experience, teaching style,
-//               achievements and background information.
-//             </p>
-//           </div>
-
-//           {/* Courses */}
-//           <div className="bg-white p-8 rounded-xl shadow">
-//             <h2 className="text-2xl font-semibold mb-6">Courses</h2>
-
-//             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-//               {[1, 2, 3, 4].map((item) => (
-//                 <div
-//                   key={item}
-//                   className="h-40 bg-gray-100 rounded-lg flex items-center justify-center text-gray-400"
-//                 >
-//                   Course Image
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-
-//         </div>
-
-//         {/* Right Section */}
-//         <div className="space-y-10">
-
-//           {/* Instructor Card */}
-//           <div className="bg-white p-6 rounded-xl shadow text-center">
-//             <div className="w-24 h-24 mx-auto rounded-full bg-gray-100 flex items-center justify-center mb-4 overflow-hidden">
-//               <img src={profileImg} />
-//               <span className="text-gray-400 text-xs">Image</span>
-//             </div>
-
-//             <h3 className="text-lg font-semibold">Instructor Name</h3>
-//             <p className="text-gray-500 text-sm mb-4">Web Developer</p>
-
-//             <button className="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition">
-//               Contact Instructor
-//             </button>
-//           </div>
-
-//           {/* Gallery */}
-//           <div className="bg-white p-6 rounded-xl shadow">
-//             <h3 className="text-lg font-semibold mb-4">Gallery</h3>
-
-//             <div className="grid grid-cols-3 gap-3">
-//               {[1, 2, 3, 4, 5, 6].map((item) => (
-//                 <div
-//                   key={item}
-//                   className="h-20 bg-gray-100 rounded flex items-center justify-center text-gray-400 text-xs"
-//                 >
-//                   Image
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-
-//         </div>
-//       </section>
-
-//     </div>
-//   );
-// }
-
 import React, { useState } from 'react';
 import { 
   FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, 
   FaPhone, FaEnvelope, FaBook, FaUsers, FaStar, 
   FaBookmark, FaArrowRight, FaShoppingCart
 } from 'react-icons/fa';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const Profile = () => {
   const [activeCourse, setActiveCourse] = useState(null);
@@ -214,6 +107,8 @@ const Profile = () => {
   ];
 
   return (
+    <>
+    <Navbar />
     <div className="min-h-screen bg-gray-50">
       {/* Banner Section */}
       <div className="relative h-[350px] bg-gradient-to-r from-purple-600 to-blue-600">
@@ -451,104 +346,9 @@ const Profile = () => {
           </nav>
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="bg-white border-t border-gray-200 mt-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-            {/* Company Info */}
-            <div className="lg:col-span-1">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Histudy</h3>
-              <p className="text-gray-600 mb-6">
-                We're always in search for talented and motivated people. Don't be shy introduce yourself!
-              </p>
-              <div className="flex items-center gap-3">
-                <a href="#" className="w-10 h-10 rounded-full bg-gray-100 text-gray-700 flex items-center justify-center hover:bg-purple-600 hover:text-white transition">
-                  <FaFacebookF />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-gray-100 text-gray-700 flex items-center justify-center hover:bg-purple-600 hover:text-white transition">
-                  <FaTwitter />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-gray-100 text-gray-700 flex items-center justify-center hover:bg-purple-600 hover:text-white transition">
-                  <FaInstagram />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-gray-100 text-gray-700 flex items-center justify-center hover:bg-purple-600 hover:text-white transition">
-                  <FaLinkedinIn />
-                </a>
-              </div>
-            </div>
-
-            {/* Useful Links */}
-            <div>
-              <h4 className="text-lg font-bold text-gray-900 mb-4">Useful Links</h4>
-              <ul className="space-y-2">
-                {['Marketplace', 'Kindergarten', 'University', 'GYM Coaching', 'FAQ', 'About Us', 'Privacy policy'].map((link) => (
-                  <li key={link}>
-                    <a href="#" className="text-gray-600 hover:text-purple-600 transition">{link}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Our Company */}
-            <div>
-              <h4 className="text-lg font-bold text-gray-900 mb-4">Our Company</h4>
-              <ul className="space-y-2">
-                {['Contact Us', 'Become Teacher', 'Blog', 'Instructor', 'Events', 'Course', 'Contact'].map((link) => (
-                  <li key={link}>
-                    <a href="#" className="text-gray-600 hover:text-purple-600 transition">{link}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Contact */}
-            <div>
-              <h4 className="text-lg font-bold text-gray-900 mb-4">Get Contact</h4>
-              <ul className="space-y-3 mb-6">
-                <li className="text-gray-600">
-                  <span className="font-semibold">Phone:</span> (406) 555-0120
-                </li>
-                <li className="text-gray-600">
-                  <span className="font-semibold">E-mail:</span> admin@example.com
-                </li>
-              </ul>
-              <div>
-                <h5 className="font-semibold text-gray-900 mb-3">Newsletter</h5>
-                <p className="text-sm text-gray-600 mb-4">
-                  2000+ Our students are subscribe Around the World.
-                </p>
-                <div className="flex gap-2">
-                  <input 
-                    type="email" 
-                    placeholder="Enter Your Email"
-                    className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600"
-                  />
-                  <button className="px-6 py-2 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg font-semibold hover:shadow-lg transition">
-                    Submit
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Copyright */}
-          <div className="border-t border-gray-200 pt-8">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <p className="text-gray-600 text-sm text-center md:text-left">
-                Copyright © 2025 <a href="#" className="text-purple-600 hover:underline">Pixcels Themes.</a> All Rights Reserved
-              </p>
-              <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
-                <a href="#" className="text-gray-600 hover:text-purple-600">Terms of service</a>
-                <a href="#" className="text-gray-600 hover:text-purple-600">Privacy policy</a>
-                <a href="#" className="text-gray-600 hover:text-purple-600">Subscription</a>
-                <a href="#" className="text-gray-600 hover:text-purple-600">Login & Register</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
+    <Footer />
+    </>
   );
 };
 
